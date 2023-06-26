@@ -1,0 +1,1599 @@
+{
+	"info": {
+		"_postman_id": "91c8883b-bb39-47a8-b972-ca9790261b5b",
+		"name": "Api Course",
+		"description": "This is Api Documention For Api Course For user and Ads and All CRUD operation and with Exambles",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21824194",
+		"_collection_link": "https://www.postman.com/blue-comet-79661/workspace/api-course/collection/21824194-91c8883b-bb39-47a8-b972-ca9790261b5b?action=share&creator=21824194&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "settings modules",
+			"item": [
+				{
+					"name": "Get All Settings",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Get All Settings",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/settings",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"settings"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Jun 2023 16:31:42 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Jun 2023 16:31:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.2"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"Settings Retrieved Successfully\",\n    \"data\": {\n        \"about me\": \"we are software company\",\n        \"why us\": \"we are professional \",\n        \"goal\": \"high quality\",\n        \"vision\": \"scalability\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "location modules",
+			"item": [
+				{
+					"name": "Git All Cities",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Git All Cities",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/cities",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"cities"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Jun 2023 17:50:00 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Jun 2023 17:50:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.2"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"Cities Retrieved Successfully\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"cairo\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"alex\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "get all districts based on city",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "get district",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/districts?city=1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"districts"
+									],
+									"query": [
+										{
+											"key": "city",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Jun 2023 18:12:18 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Jun 2023 18:12:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.2"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"Districts retrieved successfully\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"maadi\",\n            \"city\": {\n                \"id\": 1,\n                \"name\": \"cairo\"\n            }\n        },\n        {\n            \"id\": 2,\n            \"name\": \"soubra\",\n            \"city\": {\n                \"id\": 1,\n                \"name\": \"cairo\"\n            }\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "messages modules",
+			"item": [
+				{
+					"name": "Store New Message",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Store New Message",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "mohamed zayed",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "mohamedzayed52100@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "01091643693",
+											"type": "text"
+										},
+										{
+											"key": "message",
+											"value": "first message ",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/api/message",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"message"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Jun 2023 19:49:22 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Jun 2023 19:49:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.2"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "phpdebugbar-id",
+									"value": "Xc3e5ce2abf7c880eaba872e2f9b4123f"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"msg\": \"Sent Successfully\",\n    \"data\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "domains modules",
+			"item": [
+				{
+					"name": "get all domains",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "get all domains",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/domains",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"domains"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Jun 2023 20:00:09 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Jun 2023 20:00:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.2"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"Domains are empty\",\n    \"data\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Auth Modules",
+			"item": [
+				{
+					"name": "Register New User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "mohamed zayed",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "mohamedzayed521@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "password confirmation",
+									"value": "123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						},
+						"description": "Registering New user"
+					},
+					"response": [
+						{
+							"name": "Register New User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "mohamed zayed",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "mohamedzayed521@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456789",
+											"type": "text"
+										},
+										{
+											"key": "password confirmation",
+											"value": "123456789",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/api/register",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 15:33:09 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 15:33:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.2"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "phpdebugbar-id",
+									"value": "X2751e9c6cddd495538831ffea3147219"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"msg\": \"User Account Created Successfully\",\n    \"data\": {\n        \"token\": \"1|5z3s2ROOeJU9Ta9hUf7t8sGdzKfo6qII6sbLmLeY\",\n        \"name\": \"mohamed zayed\",\n        \"email\": \"mohamedzayed521@gmail.com\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "login user",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "login user",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "mohamedzayed52100@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456789",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/api/login",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 15:51:15 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 15:51:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.2"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "phpdebugbar-id",
+									"value": "X5c50649f06967e47a5a2a90842d7c39b"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"Login Successfully\",\n    \"data\": {\n        \"token\": \"3|vvQYoPBagC95vCEbXi5k7Vtx7gn3QoSWEgTMZ2R0\",\n        \"name\": \"mohamed zayed\",\n        \"email\": \"mohamedzayed52100@gmail.com\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "logout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/logout",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 16:16:10 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 16:16:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.2"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "phpdebugbar-id",
+									"value": "Xee7fa9cc6d1b1085f253bd6f0e88558f"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"logout successfully\",\n    \"data\": []\n}"
+						}
+					]
+				}
+			],
+			"description": "# **Authentication Api End-point**"
+		},
+		{
+			"name": "Ads modules",
+			"item": [
+				{
+					"name": "Get All Ads",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Get all Ads",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/ads/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"ads",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 19:48:16 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 19:48:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.2"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"No Ads available\",\n    \"data\": []\n}"
+						},
+						{
+							"name": "Get All Ads",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/ads/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"ads",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 20:10:33 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 20:10:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.2"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"Ads Retrieved Successfully\",\n    \"data\": [\n        {\n            \"id\": 2,\n            \"title\": \"second ad\",\n            \"description\": \"text for ads \",\n            \"phone\": \"01054324891\"\n        },\n        {\n            \"id\": 1,\n            \"title\": \"First ads\",\n            \"description\": \"text for ads\",\n            \"phone\": \"01021234562\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get latest Ads",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "get latest ads",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/ads/latest",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"ads",
+										"latest"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 20:13:38 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 20:13:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.2"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"Latest Ads Retrieved Successfully\",\n    \"data\": [\n        {\n            \"id\": 2,\n            \"title\": \"second ad\",\n            \"description\": \"text for ads \",\n            \"phone\": \"01054324891\"\n        },\n        {\n            \"id\": 1,\n            \"title\": \"First ads\",\n            \"description\": \"text for ads\",\n            \"phone\": \"01021234562\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Ads Based on Domain Id",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Get Ads Based on Domain Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/ads/domain/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"ads",
+										"domain",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 20:19:17 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 20:19:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.2"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"Ads in the domain retrieved successfully\",\n    \"data\": [\n        {\n            \"id\": 2,\n            \"title\": \"second ad\",\n            \"description\": \"text for ads \",\n            \"phone\": \"01054324891\"\n        },\n        {\n            \"id\": 1,\n            \"title\": \"First ads\",\n            \"description\": \"text for ads\",\n            \"phone\": \"01021234562\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "search ads",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "search and get all ads",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/ads/search",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"ads",
+										"search"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 20:31:41 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 20:31:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.2"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"Search completed\",\n    \"data\": [\n        {\n            \"id\": 2,\n            \"title\": \"second ad\",\n            \"description\": \"text for ads \",\n            \"phone\": \"01054324891\"\n        },\n        {\n            \"id\": 1,\n            \"title\": \"First ads\",\n            \"description\": \"text for ads\",\n            \"phone\": \"01021234562\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "search and set one or more result",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/ads/search?search=second",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"ads",
+										"search"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "second"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 20:33:04 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 20:33:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.2"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"Search completed\",\n    \"data\": [\n        {\n            \"id\": 2,\n            \"title\": \"second ad\",\n            \"description\": \"text for ads \",\n            \"phone\": \"01054324891\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create User Ads",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "create user Ads",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "First Tile",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "01091643693",
+											"type": "text"
+										},
+										{
+											"key": "text",
+											"value": "Firts text",
+											"type": "text"
+										},
+										{
+											"key": "domain_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/api/ads/create",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"ads",
+										"create"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 21:35:58 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 21:35:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.2"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "phpdebugbar-id",
+									"value": "X75695134b9c208aff71c87bcc2f0919d"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"msg\": \"Your Ad created successfully\",\n    \"data\": {\n        \"id\": 3,\n        \"title\": \"First Tile\",\n        \"description\": \"Firts text\",\n        \"phone\": \"01091643693\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "update user Ads",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Update user Ads",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "update from postman",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "01091643693",
+											"type": "text"
+										},
+										{
+											"key": "text",
+											"value": "update text from postman",
+											"type": "text"
+										},
+										{
+											"key": "domain_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/api/ads/update/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"ads",
+										"update",
+										"1"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 21:52:03 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 21:52:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.2"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "phpdebugbar-id",
+									"value": "Xf321ba34e22bfa56485cd848d0feef46"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"msg\": \"Your Ad updated successfully\",\n    \"data\": {\n        \"id\": 1,\n        \"title\": \"update from postman\",\n        \"description\": \"update text from postman\",\n        \"phone\": \"01091643693\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "delete user Ads",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "delete user Ads",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/ads/delete/3",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"ads",
+										"delete",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 21:58:10 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 21:58:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.2"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"Your Ad deleted successfully\",\n    \"data\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "myads for User",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Get latest Ads for user",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/ads/myads",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"ads",
+										"myads"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 22:05:46 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 22:05:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.2"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "phpdebugbar-id",
+									"value": "X336489414ca77170b388492d0db28f56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"My ads retrieved successfully\",\n    \"data\": [\n        {\n            \"id\": 2,\n            \"title\": \"second ad\",\n            \"description\": \"text for ads \",\n            \"phone\": \"01054324891\"\n        },\n        {\n            \"id\": 1,\n            \"title\": \"update from postman\",\n            \"description\": \"update text from postman\",\n            \"phone\": \"01091643693\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:8000"
+		}
+	]
+}
